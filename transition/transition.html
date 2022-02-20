@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Lab-5</title>
+    <style>
+        body{
+            font-family: 'Merriweather', serif;
+        }
+        @keyframes drive {
+            0%{
+                background: #000;
+                color:white;
+                transform: translate(1vw,1vh);
+            }
+            25%{
+                transform: translate(85vw,1vh) rotate(-90deg);
+            }
+            50%{
+                transform: translate(85vw,72vh);
+                background: #fff;
+                border: black solid 2px;
+            }
+            75%{
+                transform: translate(1vw,72vh) rotate(-90deg);
+            }
+            100%{
+                transform: translate(1vw,0px);
+                background: #000;
+                color: white;
+            }            
+        }
+        .box1{
+            animation-name: drive;
+            animation-duration: 18s;
+            animation-fill-mode: both;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            font-size: x-large;
+            font-weight: bolder;
+            border-radius: 5px;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+        .box2{
+            background: #A7CEF5;
+            border-radius: 10px;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            line-height: 150px;
+            margin-left: 45vw;
+            margin-top: 12vh;
+            font-size: x-large;
+            font-weight: bolder;
+            color:darkblue;
+            /* transition: 3s; */
+            /* transform: scale(2,1); */
+            /* transform: translate(100px, 100px); */
+            /* transform: skew(10deg,45deg); */
+            /* transform: rotate(20deg); */
+        }
+        .box2:hover{
+            transform: translate(50vw) rotate(360deg) scaleY(1);
+            transition-duration: 2s;    
+            border-radius: 50%;        
+        */
+    }
+    </style>
+</head>
+<body>
+        <div class="box1">20IT038</div>
+        <div class="box2">CSPIT</div>
+
+</body>
+</html>
